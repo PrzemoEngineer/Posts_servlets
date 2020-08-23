@@ -19,7 +19,7 @@
         </div>
         <div>
             <label for="password">Hasło:</label>
-            <input type="text" name="password" id="password"/>
+            <input type="password" name="password" id="password"/>
         </div>
         <div>
             <input type="submit" value="Zaloguj"/>
@@ -27,7 +27,7 @@
     </form>
 </div>
 <div>
-    <a href="${pageContext.request.contextPath/registration}">Zarejestruj</a>
+    <a href="${pageContext.request.contextPath}/registration">Zarejestruj</a>
 </div>
 </body>
 </html>

@@ -36,15 +36,6 @@ public class UserService {
     }
 
     public boolean authenticate(String userName, String password) {
-//        for (User user: users) {
-//            if (user.getUserName().equals(userName)) {
-//                return user.getPassword().equals(password);
-//            }
-//        }
-//        return false;
-
-//        Optional<User> user = findUserByUserName(userName);
-//        return user.isPresent() && user.get().getPassword().equals(password);
         return findUserByUserName(userName)
                 .filter(user -> user.getPassword().equals(password))
                 .isPresent();

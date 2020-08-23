@@ -6,6 +6,8 @@ public class Main {
         UserService userService = UserService.getUserService();
 
 
+
+
         PostService postService = PostService.getPostService();
         postService.findAll().stream().forEach(post -> System.out.println(post));
     }

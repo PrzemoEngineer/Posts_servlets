@@ -13,6 +13,8 @@
 <html>
 <head>
     <title>Posts page</title>
+
+<%--tak jak w command linie - cd.. to tutaj już wszsytko jasne i wystarczą dwie kropki--%>
 </head>
 <body>
 <%--    <%--%>
@@ -49,6 +51,6 @@
     </tbody>
 </table>
 
-
+<%@ include file="../users/logout.jsp"%>
 </body>
 </html>
