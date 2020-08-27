@@ -3,9 +3,11 @@ package pl.sda.domain.user;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
+@Table(name = "appuser")
 public class User {
     @Id
     @Column(length = 45)

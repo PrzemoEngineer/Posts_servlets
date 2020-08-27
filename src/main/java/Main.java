@@ -1,14 +1,16 @@
-import pl.sda.domain.user.UserService;
-import pl.sda.domain.user.post.PostService;
+
+import pl.sda.infrastructure.EntityMenagerProvider;
+
+import javax.persistence.EntityManager;
 
 public class Main {
     public static void main(String[] args) {
-        UserService userService = UserService.getUserService();
+//        UserService userService = UserService.getUserService();
+//
+//        PostService postService = PostService.getPostService();
+//        postService.findAll().stream().forEach(post -> System.out.println(post));
+        EntityManager entityManager = EntityMenagerProvider.getEmntityMenager();
 
-
-
-
-        PostService postService = PostService.getPostService();
-        postService.findAll().stream().forEach(post -> System.out.println(post));
+        entityManager.isOpen();
     }
 }

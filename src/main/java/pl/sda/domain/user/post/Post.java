@@ -15,6 +15,7 @@ public class Post {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "username")
     private User author;
+
     private Instant createdAt;
 
     public Post(String content, User author, Instant createdAt) {
